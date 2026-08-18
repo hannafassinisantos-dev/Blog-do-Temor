@@ -6,90 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog da Ale</title>
     <style>
-            header {
-                background-color: #183C63;
-                color: #d151cf;
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-            }
+        header {
+            background-color: #183C63;
+            color: #d151cf;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-            main {
-                background-color: #d0b1e8;
-                color: #183C63;
-            }
+        main {
+            background-color: #d0b1e8;
+            color: #183C63;
+        }
 
-            img {
-                width: 80px;
-                height: 80px;
-            }
+        img {
+            width: 80px;
+            height: 80px;
+        }
 
-            p {
-                font-weight: bold;
-            }
+        p {
+            font-weight: bold;
+        }
 
-            .artigo-autor {
-                font-weight: bold;
-            }
-        </style>
+        .artigo-autor {
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Meu blog tech</h1>
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
         <button>❤️<span>0</span></button>
         <button>​💚​<span>0</span></button>
-        
+
     </header>
 
     <main>
-        <section>
-        <img src="nossa senhora.jpg" alt="Nossa Senhora das Graças">
-
-
-        
-        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar frases de Santos e curiosidades sobre  sua vida.</p>
-             <button>❤️<span>0</span></button>
-        <button>​💚​<span>0</span></button>
-        </section>
-        <section>
+        <article>
+            <div>
+            <img src="nossa senhora.jpg" alt="Nossa Senhora das Graças">
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar frases de Santos e curiosidades sobre sua vida.</p>
+            <button>❤️<span>0</span></button>
+            <button>​💚​<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+    <section>
         <img src="Carlo_Acutis.jpg" alt="Carlo acutis">
 
 
-    
+
         <p>“A Eucaristia é a minha estrada para o céu!” -São Carlos Acutis</p>
-             <button>❤️<span>0</span></button>
+        <button>❤️<span>0</span></button>
         <button>​💚​<span>0</span></button>
-        </section>
-        <section>
-       
+    </section>
+    <section>
 
 
-    <img src="santa clara assis.jpg" alt="Santa Clara">
+
+        <img src="santa clara assis.jpg" alt="Santa Clara">
         <p>"Melhor guardar tesouros no céu que na terra".
--Santa Clara de Assis</p>
-             <button>❤️<span>0</span></button>
+            -Santa Clara de Assis</p>
+        <button>❤️<span>0</span></button>
         <button>​💚​<span>0</span></button>
-        </section>
+    </section>
     </main>
-<script>
- const botoes = document.querySelectorAll("button");
- botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado() {
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            if (curtiu === false){
-                texto.textContent++;
-                curtiu = true;
-            } else{
-                texto.textContent--;
-                curtiu = false;
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
             }
-        }
-    })
-     </script>
+        })
+    </script>
 </body>
 
 </html>
