@@ -5,18 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog da Hanna</title>
-    <style>
+     <style>
         header {
             background-color: #183C63;
-            color: #d151cf;
+            color: #FFFFFF;
             text-align: center;
             max-width: 800px;
+            margin-bottom: 30px;
             margin: 0 auto;
         }
 
+        body {
+            background-color: "yellow";
+
+        }
+
         main {
-            background-color: #d0b1e8;
+            background-color: #d4adcf;
             color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
         }
 
         img {
@@ -24,12 +35,35 @@
             height: 80px;
         }
 
-        p {
+        div p {
             font-weight: bold;
         }
 
         .artigo-autor {
             font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
@@ -83,6 +117,10 @@
             </div>
         </article>
     </main>
+      <main>
+        <article>
+            <div>
+            <img src="6d1a55_bcde3b2ee55d456485ff5d7103da3d09~mv2.jpeg" alt="Santa Clara de Assis">
             <p>Nossa Senhora Aparecida, padroeira do Brasil.</p>
             <button>❤️<span>0</span></button>
             <button>​💚​<span>0</span></button>
